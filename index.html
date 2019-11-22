@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu scratchpad</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="smartmenus/css/sm-core-css.css">
+	<link rel="stylesheet" type="text/css" href="css/smartmenus.css">
+
+	<!-- "sm-simple" menu theme (optional, you can use your own CSS, too) -->
+	<link href="smartmenus/css/sm-simple/sm-simple.css" rel="stylesheet" type="text/css" />
+
+	<!-- #main-menu config - instance specific stuff not covered in the theme -->
+	<!-- You could put this in an external stylesheet (e.g. where the rest of your page styles are) -->
+	<style type="text/css">
+		@media (min-width: 768px) {
+			#main-menu > li {
+				float: none;
+				display: table-cell;
+				width: 1%;
+				text-align: center;
+			}
+		}
+	</style>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="smartmenus/libs/jquery/jquery.js"></script>
+
+	<!-- SmartMenus jQuery plugin -->
+	<script type="text/javascript" src="smartmenus/jquery.smartmenus.js"></script>
+
+</head>
+<body>
+	<div class="wrap-page">
+		<nav id="main-nav">
+			<ul id="main-menu" class="sm sm-simple">
+				<li class="has-mega-menu"><a href="#">Search</a>
+					<ul class="mega-menu">
+						<li>
+							<div class="column-1-2">
+								<h2>Start here</h2>
+								<ul>
+									<li><a href="#">Quicksearch</a></li>
+									<li><a href="#">Vera</a></li>
+									<li><a href="#">Barton catalog</a></li>
+									<li><a href="#">WorldCat</a></li>
+									<li><a href="#">Course reserves</a></li>
+									<li><a href="#">More search tools & help</a></li>
+								</ul>
+							</div>
+							<div class="column-1-2">
+								<h2>Also try</h2>
+								<ul>
+									<li><a href="#">FullText Finder</a></li>
+									<li><a href="#">Google Scholar for MIT</a></li>
+									<li><a href="#">DSpace@MIT</a></li>
+									<li><a href="#">Dome</a></li>
+									<li><a href="#">Site search</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+				</li>
+				<li><a href="/hours">Hours & locations</a>
+					<ul class="mega-menu">
+						<li>
+							<div class="column-1-2">
+								<h2>Locations</h2>
+									<ul>
+										<li><a href="#">Barker Library</a></li>
+										<li><a href="#">Dewey Library</a></li>
+										<li><a href="#">Hayden Library</a></li>
+										<li><a href="#">Rotch Library</a></li>
+										<li><a href="#">Distinctive Collections</a></li>
+										<li><a href="#">Lewis Music Library</a></li>
+										<li><a href="#">Library Storage Annex</a></li>
+										<li><a href="#">All hours & location</a></li>
+									</ul>
+							</div>
+							<div class="column-1-2">
+								<h2>Using the libraries</h2>
+									<ul>
+										<li><a href="#">Map of locations</a></li>
+										<li><a href="#">Study spaces</a></li>
+										<li><a href="#">Persons with disabilities</a></li>
+										<li><a href="#">Scan, copy, print</a></li>
+										<li><a href="#">Exhibits & galleries</a></li>
+										<li><a href="#">Non-MIT visitors</a></li>
+										<li><a href="#">Library use policy</a></li>
+									</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li><a href="/borrow">Borrow & request</a>
+					<ul>
+						<li><a href="#">Your account</a></li>
+						<li><a href="#">Barton catalog</a></li>
+						<li><a href="#">WorldCat</a></li>
+						<li><a href="#">ILLiad</a></li>
+						<li><a href="#">Suggest a purchase</a></li>
+						<li><a href="#">More options & help</a></li>
+					</ul>
+				</li>
+				<li><a href="/research">Research support</a>
+					<ul>
+						<li><a href="#">Ask us</a></li>
+						<li><a href="#">Research guides & expert librarians</a></li>
+						<li><a href="#">Connect from on and off-campus</a></li>
+						<li><a href="#">Productivity tools</a></li>
+						<li><a href="#">New books by subject</a></li>
+						<li><a href="#">More research support</a></li>
+					</ul>
+				</li>
+				<li><a href="/about">About</a>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Giving to the MIT Libraries</a></li>
+					</ul>
+				</li>
+				<li><a href="/ask">Ask us</a>
+					<ul class="mega-menu">
+						<li>
+							<div class="wrap-button-chat">
+								<div id="libchat_be2c654b63dd43f31c56295ee5d78d88">Chat widget here</div>
+							</div>
+							<a href="#">More ways to ask us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="breadcrumb">
+			<a href="index.html">Menu options</a> &gt; SmartMenus
+		</div>
+		<h1>SmartMenus implementation</h1>
+		<p>This is a more complex implementation of the jQuery SmartMenus plugin. It includes non-list markup in some flyout menus, including a `mega-menu` class approach that pushes flyouts to be a full-width rendering.</p>
+		<p>This was created by cribbing from <a href="https://jsfiddle.net/vadikom/7k3wu7no/?utm_source=website&utm_medium=embed&utm_campaign=7k3wu7no">this JSfiddle demonstration.</a></p>
+	</div>
+
+	<!-- SmartMenus jQuery init -->
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			console.log('jQuery ready!');
+			$('#main-menu').smartmenus({
+				mainMenuSubOffsetX: -1,
+				subMenusSubOffsetX: 10,
+				subMenusSubOffsetY: 0,
+				subMenusMinWidth: '30em',
+				subMenusMaxWidth: '30em'
+			});
+		});
+	</script>
+</body>
+</html>

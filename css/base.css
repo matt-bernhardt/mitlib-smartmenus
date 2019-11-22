@@ -1,0 +1,10 @@
+body {
+	background: black;
+	color: white;
+}
+.wrap-page {
+	background: white;
+	color: black;
+	margin: 0 auto;
+	max-width: 980px;
+}
