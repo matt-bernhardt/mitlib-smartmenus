@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="smartmenus/css/sm-core-css.css">
 	<link rel="stylesheet" type="text/css" href="css/smartmenus.css">
 
-	<!-- "sm-simple" menu theme (optional, you can use your own CSS, too) -->
-	<link href="smartmenus/css/sm-simple/sm-simple.css" rel="stylesheet" type="text/css" />
+	<!-- "sm-mitlib" menu theme -->
 	<link rel="stylesheet" type="text/css" href="css/sm-mitlib.css">
 
 	<!-- #main-menu config - instance specific stuff not covered in the theme -->
@@ -48,7 +47,7 @@
 
 			<!-- Start rebuilt navbar -->
 			<nav id="nav-main" class="nav-main" aria-label="Primary">
-				<ul id="main-menu" class="sm sm-simple sm-mitlib">
+				<ul id="main-menu" class="sm sm-mitlib">
 
 					<!-- Search group (2 column) -->
 					<li><a href="#">Search</a>
@@ -236,7 +235,6 @@
 
 		</header>
 
-		<!-- Start of content area, for labelling -->
 		<div id="content" style="background-color: white; color: black; margin-top: 4em;">
 			<div class="breadcrumb">
 				<a href="index.html">First</a> &gt;
@@ -245,14 +243,24 @@
 			<h1>SmartMenus for MIT Libraries</h1>
 			<p><strong>This page is still in progress</strong></p>
 			<p>This page should place the menu within the navbar context, and load the needed global styles in place on libraries.mit.edu.</p>
+			<p>Interaction with the menu should be supported in touch interfaces, keyboard navigation, screenreaders, and mouse interactions. All of them should be possible. The spacebar will open a highlighted menu, while escape will close them.</p>
 			<h2>Issues</h2>
-			This page has the following issues:
+			This page has the following known issues:
 			<ul>
-				<li>Aesthetics aren't in place</li>
+				<li>Between 568 and 768 pixels in width, the menu stacks and breaks theming</li>
+				<li>Below 568 pixels in width, the meatball appears, but no javascript listens for its invocation</li>
+				<li>Visual indicator of a submenu (triangle) is probably off-brand - alternative has been identified, but not implemented</li>
+				<li>"About" and "Ask us" flyouts are extending outside the content column</li>
+				<li>"Ask us" flyout is too wide (min/max width is wonky)</li>
+				<li>SVG icons for "Ask us" and "Account" items are missing</li>
+				<li>Flyout elements are unstyled</li>
+				<li>Flyout links don't have subtext</li>
+				<li>LibChat widget isn't implemented</li>
+				<li>Probably other branding problems</li>
 			</ul>
+			<h2>Feedback?</h2>
+			<p>Please contact Matt Bernhardt with any feedback about this work.</p>
 		</div>
-		<!-- End of content area -->
-
 	</div>
 
 	<!-- SmartMenus jQuery init -->
@@ -264,7 +272,9 @@
 				subMenusSubOffsetX: 10,
 				subMenusSubOffsetY: 0,
 				subMenusMinWidth: '30em',
-				subMenusMaxWidth: '30em'
+				subMenusMaxWidth: '30em',
+				showTimeout: 0,
+				hideTimeout: 0
 			});
 		});
 	</script>
