@@ -6,11 +6,11 @@ This is a demonstration project to see how we can implement our main navigation 
 
 Our current menu can be seen at https://libraries.mit.edu/ :
 
-![MIT Libraries full navbar](https://matt-bernhardt.github.io/mitlib-smartmenus/img/nav_homepage.png)
+![MIT Libraries full navbar](img/nav_homepage.png)
 
 This menu exists in simpler form on some pages, and looks like this:
 
-![MIT Libraries simple navbar](https://matt-bernhardt.github.io/mitlib-smartmenus/img/nav_simple.png)
+![MIT Libraries simple navbar](img/nav_simple.png)
 
 Examples of this navbar are at:
 - [MIT Quicksearch](https://lib.mit.edu/)
