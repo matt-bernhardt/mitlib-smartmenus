@@ -1,0 +1,26 @@
+.sm-mitlib {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+.sm-mitlib a,
+.sm-mitlib a:hover,
+.sm-mitlib a:focus,
+.sm-mitlib a:active {
+	color: white;
+	line-height: 1.4;
+	padding: 32px 8px 8px 8px;
+	text-decoration: none;
+}
+.sm-mitlib a:hover,
+.sm-mitlib a:focus,
+.sm-mitlib a:active {
+	background-color: purple;
+}
+.sm-mitlib a .sub-arrow::before {
+	content: '\25bc';
+}
+.sm-mitlib > li {
+	border-left: none;
+	vertical-align: bottom;
+}
