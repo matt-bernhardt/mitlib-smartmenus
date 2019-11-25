@@ -86,6 +86,10 @@
 #main-menu .mega-menu {
   color: #353451;
 }
+/* The push class pushes flyout items to the left, not the right (for use on the right edge of a screen) */
+#main-menu .mega-menu.push {
+  left: auto !important;
+}
 
 #main-menu .mega-menu ul {
   position: static;
