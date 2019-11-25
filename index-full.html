@@ -200,9 +200,9 @@
 						<ul class="mega-menu">
 							<li>
 								<div class="wrap-button-chat">
-									<div id="libchat_be2c654b63dd43f31c56295ee5d78d88">Chat widget here</div>
+									<div id='libchat_be2c654b63dd43f31c56295ee5d78d88'></div>
 								</div>
-								<a href="#">More ways to ask us</a>
+								<a class="more" href="#">More ways to ask us</a>
 							</li>
 						</ul>
 					</li>
@@ -257,7 +257,6 @@
 						<li>SVG icons for "Ask us" and "Account" items are missing</li>
 						<li>Flyout elements are unstyled</li>
 						<li>Flyout links don't have subtext</li>
-						<li>LibChat widget isn't implemented</li>
 						<li>Probably other branding problems</li>
 					</ul>
 					<h2>Feedback?</h2>
@@ -270,7 +269,14 @@
 	<!-- SmartMenus jQuery init -->
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
+
+			// Heartbeat
 			console.log('jQuery ready!');
+
+			// LibChat integration
+			$.getScript('//v2.libanswers.com/load_chat.php?hash=be2c654b63dd43f31c56295ee5d78d88');
+
+			// TODO: Figure out min/max width parameters
 			$('#main-menu').smartmenus({
 				mainMenuSubOffsetX: -1,
 				subMenusSubOffsetX: 10,
@@ -280,6 +286,7 @@
 				showTimeout: 0,
 				hideTimeout: 0
 			});
+
 		});
 	</script>
 </body>
