@@ -235,31 +235,35 @@
 
 		</header>
 
-		<div id="content" style="background-color: white; color: black; margin-top: 4em;">
-			<div class="breadcrumb">
-				<a href="index.html">First</a> &gt;
-				<a href="index-full.html">with navbar</a> &gt;
+		<div id="content" style="margin-top: 4em;">
+			<div class="main-content content-main">
+				<div class="entry-content">
+					<div class="breadcrumb">
+						<a href="index.html">First</a> &gt;
+						<a href="index-full.html">with navbar</a> &gt;
+					</div>
+					<h1>SmartMenus for MIT Libraries</h1>
+					<p><strong>This page is still in progress</strong></p>
+					<p>This page should place the menu within the navbar context, and load the needed global styles in place on libraries.mit.edu.</p>
+					<p>Interaction with the menu should be supported in touch interfaces, keyboard navigation, screenreaders, and mouse interactions. All of them should be possible. The spacebar will open a highlighted menu, while escape will close them.</p>
+					<h2>Issues</h2>
+					This page has the following known issues:
+					<ul>
+						<li>Between 568 and 768 pixels in width, the menu stacks and breaks theming</li>
+						<li>Below 568 pixels in width, the meatball appears, but no javascript listens for its invocation</li>
+						<li>Visual indicator of a submenu (triangle) is probably off-brand - alternative has been identified, but not implemented</li>
+						<li>"About" and "Ask us" flyouts are extending outside the content column</li>
+						<li>"Ask us" flyout is too wide (min/max width is wonky)</li>
+						<li>SVG icons for "Ask us" and "Account" items are missing</li>
+						<li>Flyout elements are unstyled</li>
+						<li>Flyout links don't have subtext</li>
+						<li>LibChat widget isn't implemented</li>
+						<li>Probably other branding problems</li>
+					</ul>
+					<h2>Feedback?</h2>
+					<p>Please contact Matt Bernhardt with any feedback about this work.</p>
+				</div>
 			</div>
-			<h1>SmartMenus for MIT Libraries</h1>
-			<p><strong>This page is still in progress</strong></p>
-			<p>This page should place the menu within the navbar context, and load the needed global styles in place on libraries.mit.edu.</p>
-			<p>Interaction with the menu should be supported in touch interfaces, keyboard navigation, screenreaders, and mouse interactions. All of them should be possible. The spacebar will open a highlighted menu, while escape will close them.</p>
-			<h2>Issues</h2>
-			This page has the following known issues:
-			<ul>
-				<li>Between 568 and 768 pixels in width, the menu stacks and breaks theming</li>
-				<li>Below 568 pixels in width, the meatball appears, but no javascript listens for its invocation</li>
-				<li>Visual indicator of a submenu (triangle) is probably off-brand - alternative has been identified, but not implemented</li>
-				<li>"About" and "Ask us" flyouts are extending outside the content column</li>
-				<li>"Ask us" flyout is too wide (min/max width is wonky)</li>
-				<li>SVG icons for "Ask us" and "Account" items are missing</li>
-				<li>Flyout elements are unstyled</li>
-				<li>Flyout links don't have subtext</li>
-				<li>LibChat widget isn't implemented</li>
-				<li>Probably other branding problems</li>
-			</ul>
-			<h2>Feedback?</h2>
-			<p>Please contact Matt Bernhardt with any feedback about this work.</p>
 		</div>
 	</div>
 
